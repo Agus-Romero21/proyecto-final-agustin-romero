@@ -1,0 +1,32 @@
+@import "../utilidades/extend";
+
+.div__title--h1{
+    @extend %div-textos;
+    h1{
+        font-family: 'Lora', serif;
+    }
+}
+
+.div__subtitle--h2{
+    @extend %div-textos;
+}
+
+.div__subtitle--h2 h2{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Lobster Two', cursive;
+}
+
+h3{
+    @extend %div-textos;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Lobster Two', cursive;
+}
+
+.div__p{
+    @extend %div-textos;
+}
+
+.div__p p{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Lobster Two', cursive;
+}

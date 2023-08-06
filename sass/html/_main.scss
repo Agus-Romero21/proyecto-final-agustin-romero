@@ -1,0 +1,65 @@
+@import "../utilidades/mixin";
+@import "keyframe";
+
+main{
+    margin-top: 7rem;
+    background-color: transparent;
+    .main__icon{
+        height: 33rem;
+        background-image: linear-gradient(to bottom, white, black);
+        justify-content: center;
+        
+        div{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            
+                img{
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                @include animacion-index;
+            } 
+        }
+    }
+}
+
+
+.main__banner{
+    overflow: hidden; }
+  
+.main__banner img{
+    width: 160%;
+    height: 100%;
+    object-fit: contain; }
+
+.body__main--carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main__carrito--compras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main__carrito--compras input{
+    align-self:center ;
+    margin: 20px;
+    width: 15em;
+    height: 5em;
+    background-color: rgb(79, 79, 180);
+    color: rgb(240, 240, 240);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.main__carrito--compras input:active{
+    transform: translateY(-5px);
+    background-color: rgb(28, 13, 168);
+}

@@ -1,0 +1,111 @@
+@import "../utilidades/lista";
+
+header{
+    top: 0px;
+    display: grid;
+    grid-template-rows: 1.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "icon login"
+        "nav nav";
+    gap: 5px;
+    
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: nth($colores, 1);
+    nav{
+        color: white;
+        grid-area: nav;
+        width: 100%;
+        height: 3.5rem;
+        background-color: nth($colores, 1);
+
+        .div__a--nav:hover{
+            text-shadow: 0px 0px 3px nth($colores, 2),  0px 0px 5px nth($colores, 2),  0px 0px 10px nth($colores, 2);
+        }
+
+        .div__ul--nav{
+            width: 100%;
+            background-color: nth($colores, 1);
+        }
+
+        .li__ul--nav{
+            background-color: nth($colores, 1);
+        }
+    }
+}
+
+
+.header__icon{
+    grid-area: icon;
+    width: 3rem;
+    
+    a img{
+        width: 90%;
+        border-radius: 50%;
+    }
+}
+.header__login{
+    grid-area: login;
+    width: 3rem;
+    
+    justify-self: end;
+    a img{
+        width: 90%;
+        border-radius: 50%;
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px; }
+
+.section__form--config{
+    width: 100%;
+}
+  
+article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; }
+
+
+
+address {
+    position: fixed;
+    right: 3px;
+    bottom: 3px; }
+  
+  .a__instagram {
+    border-radius: 10px;
+    display: inline;
+    width: 50px;
+    height: 50px; }
+  
+  .a__whatsapp {
+    border-radius: 50px;
+    display: inline;
+    width: 50px;
+    height: 50px; }
+  
+    .div__button:active {
+        background-color: nth($colores, 3);
+        box-shadow: 1px 0px 10px nth($colores, 2);
+        color: black; }
+
+    .a__instagram:active, .a__whatsapp:active{
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+    }
+
+footer {
+    width: 100%;
+    background-color: nth($colores, 1);
+    box-shadow: -1px -3px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-style: italic;
+    font-size: small; }
