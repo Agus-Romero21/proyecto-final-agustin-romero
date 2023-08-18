@@ -538,6 +538,16 @@ form .div__ul--short input:active {
     background-color: #209cc9;
     box-shadow: 1px 0px 10px #66b4f8;
     color: white; }
+  .main__section--index {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px; }
+  .article__card {
+    width: 15rem;
+    height: 20rem; }
   .section__form--short {
     margin: 2rem;
     width: 18rem;
